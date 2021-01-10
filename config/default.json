@@ -1,6 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://jake123:y59ZWGkMA0YMUx9L@dev-connector.y9mtk.mongodb.net/dev-connector?retryWrites=true&w=majority",
-    "jwtSecret": "LpPpQx3n39NGb8M02xEj1r03Brsa2Auq",
-    "githubClientId": "52c79087e40f0daffc45",
-    "githubSecret": "80c7b1be7b255cb9f02a1ef814a0b809bd23c269"
-}
