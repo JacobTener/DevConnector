@@ -5,7 +5,8 @@ import{
     AUTH_ERROR,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
-    LOGOUT
+    LOGOUT,
+    ACCOUNT_DELETED
 } from '../actions/types';
 
 const initialState = {
@@ -14,8 +15,8 @@ const initialState = {
     loading: true,
     user: null,
 }
- // eslint-disable-next-line
-export default function(state = initialState, action) {
+
+export default function auth(state = initialState, action) {
     const { type, payload} = action;
     switch(type){
         case USER_LOADED:
@@ -38,6 +39,7 @@ export default function(state = initialState, action) {
         case LOGIN_FAIL:
         case REGISTER_FAIL:
         case AUTH_ERROR:
+        case ACCOUNT_DELETED:
             localStorage.removeItem('token')
             return {
                 ...state,
