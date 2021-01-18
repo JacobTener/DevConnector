@@ -22,6 +22,7 @@ const EditProfile = ({profile: {profile, loading }, createProfile, getCurrentPro
     });
 
     const [displaySocialInputs, toggleSocialInputs] = useState(false)
+    
     useEffect(() => {
         getCurrentProfile();
 
@@ -39,6 +40,7 @@ const EditProfile = ({profile: {profile, loading }, createProfile, getCurrentPro
             youtube: loading || !profile.social ? '' : profile.social.youtube,
             instagram: loading || !profile.social ? '' : profile.social.instagram
         })
+        // eslint-disable-next-line
     }, [loading, getCurrentProfile]);
     const {
         company,
